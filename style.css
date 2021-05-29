@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color:  hsl(217, 28%, 15%);
+    color:white;
+    font-family: sans-serif;
+}
+h1,h2,h3,.nav{
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    color: hsl(176, 68%, 64%) ;
+}
+
+/*navbar*/
+header{
+    margin-top: 1em;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1050px;
+    margin: 0 auto;
+    font-size: .8em;
+}
+.nav a img{
+    width: 100px;
+}
+
+.navList{
+    display: flex;
+  
+    list-style: none;
+    margin: 0;
+   
+ 
+   
+}
+.navLink{
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+}
+.navLink:hover{
+    color: white;
+}
+.navItem+.navItem{
+    margin-left: 1em;
+}
+
+
+
+/*home-section*/
+
+
+
+.home__section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3em;
+   
+    max-width: 450px;
+    text-align: center;
+   
+}
+.home__section img{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.background{
+    background:  url(/images/bg-curvy-mobile.svg) no-repeat
+    ;
+ background-position:bottom;
+ background-size:100%;
+
+
+   
+}
+.body-background{
+    background-color:  hsl(218, 28%, 13%);
+    padding-top: 20px;
+    
+}
+.home__section--text{
+    margin-top: 1em;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+ 
+   
+}
+
+.home__section--text button{
+    width: 200px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 40px;
+    margin-top: 1.5em;
+    background-color:hsl(198, 60%, 50%) ;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+
+
+/*serivice-details*/
+@media screen and (min-width:760px){
+    .flex{
+        display: flex;
+        grid-gap: 1em;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .service__container{
+        margin-top: 0;
+        max-width: 350px;
+    }
+    .service__container *{
+        margin-top: 0em;
+    }
+}
+
+
+.container__one{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1050px;
+ 
+    
+}
+.service__container{
+    text-align: center;
+    margin-top: 4em;
+    
+}
+.service__container *, .home__section--text *{
+    margin-top: 1em;
+}
+.service__container img{
+ width: 50px;
+}
+
+
+
+
+
+/*how it wprks*/
+@media screen and (min-width:760px){
+    .working__container--text{
+        text-align: left;
+    }
+    .working__container{
+        justify-content: space-evenly;
+    }
+}
+
+.container__two{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 8em;
+}
+.working__container{
+    text-align: center;
+}
+
+.working__container img{
+width: 100%;
+max-width: 400px;
+
+}
+.working__container--text *{
+    margin-top: 1em;
+    max-width: 650px;
+} 
+
+/*card--Section*/
+
+.card{
+   max-width: 350px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 25px 20px;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-radius: .5em;
+ 
+
+}
+.card__profile{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.card__profile img{
+    width: 40px;
+    border-radius: 50%;
+  
+}
+.card__profile--text{
+    line-height: 1em;
+margin-left:1em ;
+margin-top: 5px;
+}
+.card__profile--text p{
+    font-size: .8rem;
+    
+}
+
+/*card over footer*/
+.overlap{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:60px;
+}
+
+.card__footer{
+    width: 95%;
+    background-color:  hsl(217, 28%, 15%);
+    max-width: 750px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2em;
+  
+}
+.card__footer input,button{
+    padding: 10px 25px;
+    width: 80%;
+    border-radius: 15px;
+    border: none;
+  
+}
+.card__footer input{
+    max-width: 400px;
+}
+.card__footer button{
+    margin-top: 1em;
+    max-width: 230px;
+    background-color: hsl(198, 60%, 50%);
+    color: whitesmoke;
+   font-weight: 600;
+}
+
+/*footer*/
+@media screen and (min-width:760px){
+    .logo--address{
+        max-width: 450px;
+    }
+}
+.footer{
+    padding: 40px;
+    width: 100%;
+    background-color:  hsl(216, 53%, 9%);
+    margin: 0;
+   
+}
+.footer__container{
+    margin-top: 4em;
+}
+.footer__container img{
+width:100px ;
+}
+.adress{
+    display: flex;
+    margin: 0;
+    line-height: 1em;
+}
+.adress i{
+    margin-top: 9px;
+    margin-right: 5px;
+}
+.menu__button,.menu__contact{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.icons{
+    text-align: center;
+    
+}
+.icons * *{
+    margin: 0;
+    
+    text-align: center;
+ color: white;
+
+ padding: 8px;
+ border:1px solid white;
+ border-radius: 50%;
+}
+.footer__container *+*{
+line-height: 2em;
+}
+
